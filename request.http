@@ -1,0 +1,8 @@
+# @name create_wihtout_name
+GET http://localhost:80/users
+Content-Type: application/json
+
+###
+# @name create_with_name
+GET http://localhost:80/users?name=Full%20Cycle!!
+Content-Type: application/json
