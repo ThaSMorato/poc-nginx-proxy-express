@@ -43,7 +43,7 @@ app.get("/users", async (req, res) => {
     const users = await con.query("SELECT * FROM users;")
 
     return res.send(
-      `<h1>Full Cycle</h1>\n${users.map(user => `<p>${user.id} - ${user.name}</p>`).join('\n')}`
+      `<h1>Full Cycle Rocks!</h1>\n${users.map(user => `<p>${user.id} - ${user.name}</p>`).join('\n')}`
     )
 
   } catch (error) {
